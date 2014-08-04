@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+                    android:key="speed.units"
+                    android:title="Speed units"
+                    android:summary="Select speed units to use in application"
+                    android:defaultValue="m/s"
+                    android:entryValues="@array/speed_units"
+                    android:entries="@array/speed_units_titles"/>
+</PreferenceScreen>

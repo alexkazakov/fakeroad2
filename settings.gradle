@@ -1,0 +1,2 @@
+include ':app', ':Google-Directions-Android'
+project(':Google-Directions-Android').projectDir = new File('Google-Directions-Android/library')

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <item
+            android:id="@+id/action_direction"
+            android:title="Direction"
+            android:showAsAction="always|withText">
+        <menu>
+            <group
+                    android:id="@+id/action_group_direction_settings"
+                    android:checkableBehavior="single">
+                <item
+                        android:id="@+id/direction_none"
+                        android:title="None"
+                        android:showAsAction="ifRoom|withText"/>
+
+                <item
+                        android:id="@+id/direction_walking"
+                        android:title="Walking"
+                        android:showAsAction="ifRoom|withText"/>
+                <item
+                        android:id="@+id/direction_biking"
+                        android:title="Biking"
+                        android:showAsAction="ifRoom|withText"/>
+                <item
+                        android:id="@+id/direction_driving"
+                        android:title="Driving"
+                        android:checked="true"
+                        android:showAsAction="ifRoom|withText"/>
+                <item
+                        android:id="@+id/direction_transit"
+                        android:title="Transit"
+                        android:checked="true"
+                        android:showAsAction="ifRoom|withText"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+            android:id="@+id/action_add_new_point"
+            android:title="@string/new_point"
+            android:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_start_route"
+            android:title="Start"
+            android:icon="@android:drawable/ic_media_play"
+            android:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_stop_route"
+            android:title="Stop"
+            android:icon="@android:drawable/ic_media_pause"
+            android:showAsAction="collapseActionView"/>
+
+    <item
+            android:id="@+id/action_new_route"
+            android:title="@string/new_route"
+            android:showAsAction="collapseActionView|withText"/>
+    <item
+            android:id="@+id/action_app_preferences"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="App preferences"
+            android:showAsAction="collapseActionView"
+            />
+
+</menu>
