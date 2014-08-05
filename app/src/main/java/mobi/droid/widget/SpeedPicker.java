@@ -72,7 +72,7 @@ public class SpeedPicker extends FrameLayout{
                 onSpeedChanged();
             }
         });
-
+        onSpeedChanged();
     }
 
     private void onSpeedChanged(){
@@ -98,9 +98,6 @@ public class SpeedPicker extends FrameLayout{
                 mTvSpeed2.setText(String.format("%.2f mph", convertKMHtoMPH(currentSpeed)));
                 break;
         }
-
-//        String formatMin = String.format("Min: %d m/s %d km/h %d mph", mMinSpeed, (int) (mMinSpeed * 3.6),
-//                                         (int) (mMinSpeed * 2.23));
 
     }
     public static float convertKMHtoMS(float ms){
@@ -135,10 +132,6 @@ public class SpeedPicker extends FrameLayout{
 
     public int getCurrentSpeed(){
         return mSpeedSpinner.getValue();
-    }
-
-    enum SpeedType{
-        ms, mph, kmh
     }
 
     /**
